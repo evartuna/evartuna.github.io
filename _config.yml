@@ -1,16 +1,25 @@
-# Example Site settings
+remote_theme : tareqdandachi/jekyll-shell-theme
+title: "jekyll-shell-theme"
+tagline: "A jekyll theme that looks like a shell/terminal"
+description: "This is a preview of jekyll-shell-theme."
+github_username: tareqdandachi
+baseurl: ""
+url: "https://evartuna.github.io"
 
-#google_analytics: UA-NNNNNNNN-N
-
-#header_pages:
-#  - index.md
-#  - about.md
-
-#footer: 'follow us on <a href="https://twitter.com/">twitter</a>'
-
-#style: light # dark (default) or light
-#listen_for_clients_preferred_style: true # true or false (default)
-url : "https://evartuna.github.io"
-baseurl : ""
 plugins:
+  - jemoji
+  - jekyll-sitemap
   - jekyll-seo-tag
+
+sass:
+  style: compressed
+
+highlighter: rouge
+
+header_pages:
+  - index.md
+  - read-me.md
+  - preview.md
+
+# set the size of the text to 'large' or 'small', default is small
+font-size: small
